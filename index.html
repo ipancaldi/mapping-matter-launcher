@@ -406,9 +406,8 @@ function render(tab,filter=''){
       html+=`<div class="card">${thumb}<div class="body"><div class="ttl">${x.n}</div></div></div>`;
     }else{
       const action = tab==='migratable' ? `<button class="cardbtn migrate">${I_CLOUD}Migrate</button>` : '';
-      const metaIcon = tab==='mine' ? I_CLOUD : '';
       html+=`<div class="card">${thumb}<div class="body"><div class="li-main"><div class="ttl">${x.n}</div>
-        <div class="meta">${metaIcon}${x.m}</div></div>
+        <div class="meta">${x.m}</div></div>
         <div class="foot">${avatars(x.team||2)}${action}</div></div></div>`;
     }
   });
