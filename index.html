@@ -6,7 +6,7 @@
 <title>Mapping Matter · Projects</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* BrandOS tokens — accents/type theme-independent; surfaces swap per [data-theme].
    Source: Areas/Disguise BrandOS — Tokens (Colour / Typography / Octopus). */
@@ -15,9 +15,9 @@
   --maglight-soft:rgba(255,152,244,.16); --maglight-line:rgba(255,152,244,.5);
   --green-soft:rgba(107,255,220,.14); --green-line:rgba(107,255,220,.45);
   --orange-soft:rgba(255,133,89,.13); --orange-line:rgba(255,133,89,.45);
-  --font-display:'Aeonik','Hanken Grotesk',-apple-system,'Segoe UI',sans-serif;
-  --font-body:'Inter',-apple-system,'Segoe UI',sans-serif;
-  --font-mono:'Aeonik Mono','IBM Plex Mono',ui-monospace,monospace;
+  --font-display:'Aeonik','Inter',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'Aeonik Mono','Inter',sans-serif;
   --topbar:60px; --cta-text:#101828;
 }
 html[data-theme="dark"]{
@@ -242,7 +242,6 @@ html[data-theme="light"] .icon-sun{display:none}
     <div class="lens">
       <div class="ico"><svg class="mm" viewBox="0 0 68 68" fill="none"><rect width="68" height="68" rx="8.5" fill="#1D2939"/><path d="M46.2412 46.2412H21.7588V21.7588L33.999 39.3613L46.2412 21.7588V46.2412Z" fill="url(#mmGrad)"/></svg></div>
       <span class="name">Mapping Matter</span>
-      <span class="ver">2.0</span>
     </div>
   </div>
 
@@ -281,12 +280,10 @@ html[data-theme="light"] .icon-sun{display:none}
         <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
       </button>
       <div class="menu" id="orgMenu" style="left:0;top:54px;min-width:240px">
-        <div class="mh">Switch workspace</div>
+        <div class="mh">Organizations</div>
         <button class="orgrow" data-org="Disguise CX"><span class="on">Disguise CX</span><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></button>
         <button class="orgrow" data-org="Eurovision Host Broadcast"><span class="on">Eurovision Host Broadcast</span></button>
         <button class="orgrow" data-org="Sphere Studios"><span class="on">Sphere Studios</span></button>
-        <div class="sep"></div>
-        <button class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>Create workspace</button>
       </div>
     </div>
 
